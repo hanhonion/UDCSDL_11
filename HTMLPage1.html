@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Nhập Liệu Khách Hàng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FF9A3C 0%, #FF6B00 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-start pt-12 p-4">
+
+    <div class="bg-white rounded-3xl shadow-xl p-8 w-full max-w-lg">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">
+            Nhập Thông Tin Khách Hàng
+        </h2>
+
+        <form method="post" action="#">
+
+            <!-- Họ và Tên -->
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700 mb-1">
+                    Họ và Tên
+                </label>
+                <input type="text" name="Ten"
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-orange-500 outline-none"
+                       placeholder="Nguyễn Văn A" required>
+            </div>
+
+            <!-- SĐT -->
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700 mb-1">
+                    Số Điện Thoại
+                </label>
+                <input type="text" name="SDT"
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-orange-500 outline-none"
+                       placeholder="0912345678" required>
+            </div>
+
+            <!-- CCCD -->
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700 mb-1">
+                    CCCD
+                </label>
+                <input type="text" name="CCCD"
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-orange-500 outline-none"
+                       placeholder="012345678901" required>
+            </div>
+
+            <!-- Bằng Lái -->
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700 mb-1">
+                    Hạng Bằng Lái
+                </label>
+                <select name="BangLai"
+                        class="w-full bg-gray-100 border border-transparent rounded-lg px-4 py-3 text-sm focus:border-orange-500 outline-none"
+                        required>
+                    <option value="">-- Chọn Hạng --</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+
+            <!-- Địa điểm thuê -->
+            <div class="mb-6">
+                <label class="block text-sm font-bold text-gray-700 mb-1">
+                    Địa Điểm Thuê
+                </label>
+                <input type="text" name="DiaDiemThue"
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-orange-500 outline-none"
+                       placeholder="Hà Nội" required>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center">
+                <button type="submit"
+                        class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full shadow hover:bg-orange-600 transition-transform active:scale-95">
+                    Lưu Khách Hàng
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
